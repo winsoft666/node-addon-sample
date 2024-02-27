@@ -1,0 +1,15 @@
+{
+  "name": "node-addon-sample",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "A node addson sample",
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "^7.1.0"
+  },
+  "scripts": {
+    "build-debug": "node-gyp --debug --arch=x64 configure rebuild",
+    "build-release": "node-gyp --release --arch=x64 configure rebuild",
+    "test": "node test.js"
+  }
+}
